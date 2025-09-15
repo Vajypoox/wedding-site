@@ -1,12 +1,16 @@
-/* Base styles */
+/* ===========================
+   Base styles
+=========================== */
 body {
     padding: 2rem;
+    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+    background-color: #fff;
+    color: #333;
 }
 
-h1 {
-    font-size: 16px;
-    margin-top: 0;
+h1, h2, h3 {
+    margin: 0 0 1rem 0;
 }
 
 p {
@@ -16,19 +20,27 @@ p {
     margin-top: 5px;
 }
 
+a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
 .card {
     max-width: 620px;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 16px;
     border: 1px solid lightgray;
     border-radius: 16px;
+    background-color: #fff;
 }
 
 .card p:last-child {
     margin-bottom: 0;
 }
 
-/* Hero background section */
+/* ===========================
+   Hero background section
+=========================== */
 .hero-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('images/Website-bg.jpg');
@@ -40,5 +52,79 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Text on hero section will be white */
+    color: white;
+    text-align: center;
+}
+
+.hero-bg h1 {
+    font-size: 3rem;
+}
+
+/* ===========================
+   Countdown Section
+=========================== */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item div:first-child {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.countdown-item div:last-child {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ===========================
+   RSVP Form Section
+=========================== */
+.rsvp-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.rsvp-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.rsvp-form input,
+.rsvp-form textarea,
+.rsvp-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.rsvp-form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rsvp-form button:hover {
+    background-color: #d81b60;
 }
