@@ -1,28 +1,44 @@
+/* Base styles */
 body {
-	padding: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
 }
 
 h1 {
-	font-size: 16px;
-	margin-top: 0;
+    font-size: 16px;
+    margin-top: 0;
 }
 
 p {
-	color: rgb(107, 114, 128);
-	font-size: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+    color: rgb(107, 114, 128);
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .card {
-	max-width: 620px;
-	margin: 0 auto;
-	padding: 16px;
-	border: 1px solid lightgray;
-	border-radius: 16px;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
 }
 
 .card p:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Hero background section */
+.hero-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/Website-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text on hero section will be white */
 }
